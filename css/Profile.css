@@ -1,0 +1,88 @@
+/* Profile.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2a2a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 960px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: auto; /* ปรับให้ความสูงของ container ยืดหยุ่นตามเนื้อหา */
+}
+
+.profile-image {
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: 14px; /* ปรับขนาดตัวอักษรให้เล็กลง */
+    line-height: 1.6;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f5f500;
+    color: #000;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #ffd700;
+}
+
+.personal-info {
+    margin-top: 20px;
+}
+
+.personal-info h2 {
+    margin-bottom: 10px;
+}
+
+.personal-info ul {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+.personal-info li {
+    margin-bottom: 5px;
+}
+
+.personal-info li strong {
+    width: 120px;
+    display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .profile-image {
+        max-width: 150px;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+        height: auto;
+    }
